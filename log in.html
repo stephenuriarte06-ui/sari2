@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sari2Wear - Login</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .error-message {
+            color: red;
+            display: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .success-message {
+            color: green;
+            display: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .btn-custom {
+            background: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background: #218838;
+        }
+        .extra-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter your username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                </div>
+                <div id="error-message" class="error-message"></div>
+                <button type="submit" class="btn btn-custom w-100">Login</button>
+            </form>
+            <div class="extra-link">
+                <p>No account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
